@@ -1,0 +1,90 @@
+MySQL(10 days) & MongoDB(8-9 days)
+--- demo classes(2-3 days)
+--- 3 weeks
+ --- 2.10-2.15    3.45-3.55
+
+--- no prerequities
+
+1. why we need DBMS?
+   data is crucial for any business and it needs to be structured, mainitained and analyzed
+olden times, we used to files
+Modern time, digital needs to be structured. 
+Data is structured information
+We store data in Databases
+DBMS allows to read,update,delete the databases
+
+2. Types of DataBases:
+There are two kinds of DBMS 
+  - - RDBMS(relational database management system)
+         -- stores the data in tables
+         -- easy to use, difficult to store
+         -- relations can be well maintained 
+Eg:  MySQL,oracle,sql server,sql lite, postgresql
+ - - Non - Relational DBMS
+        -- huge, easy to store and fast
+        -- documents,objects,trees,graphs
+Eg: mongoDB, couchDB,cassandra,radis,Apache
+
+MySQL is a DBMS which is used to create,read,update,delete databases.
+SQL is a language used to do operations using mySQL
+Installation: 
+Go to MySQL downloads page --->
+ commuiy server(GPL) download --->
+MySQL community server ---->
+select second download-->
+No thanks just download
+
+open downloaded exe file --> select full
+---> click next only until u see password
+--> enter password --> next.... install
+
+MYSQL means MYSQL SERVER
+There are two ways to connect MySQL Server
+   -- workbench  -- user interface(GUI) tool to connect or interact with database
+   -- command line clent -- CLI(command line interface) to connect or interact with database
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
