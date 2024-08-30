@@ -1,0 +1,20 @@
+SQL Language will have some sub languages like
+1 DDL( Data Definition Langaugae )
+these commands are used to create, drop , alter the databases, tables,views etc..,
+eg: create,alter,drop,truncate,rename
+
+2. DML(Data Manipulation Lanaguage ), DQL(Data Query Language):
+these commands are used to interact and manipulate the data.
+Eg: insert,update,delete
+
+DQL commands are used to extract data using queries
+Eg: select, aggregate fns,joins
+
+3. DCL(Data Control Language):
+These commands are used to give access/control towards the data
+Eg: grant,revoke
+
+
+4. TCL(Transmisiion/transaction control language ): 
+These commands are used to control transactions
+save,commit,rollback

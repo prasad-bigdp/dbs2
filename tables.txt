@@ -1,0 +1,32 @@
+tables  are used to store the data in rows and columns. Rows are also called records and columns are called fields. Each and Every column contains data of single datatype
+Most of the used datatypes are:
+-- INT -- int is used for integers
+we can also use TINYINT or BIGINT
+-- Decimal(p,q) -- p is max no.of digits before decimal and q is max no.of digits after decimal
+eg: DECIMAL(5,2)---131.2,131.25,135.963
+-- char() and varchar()
+  Both are used to store strings but char contains fixed length and varchar contains variable length with maximum limit
+char(2) -- "DP","PK"
+varchar(20)-- any number of characters upto 20
+DATE -- it returns date in 'DD/mm/YYYY' format
+TIME -- it store time with date in
+'DD/MM/YYYY HH:mm:ss' format
+
+create  -- create table table-name(column-name dtataype, column2 datatype);
+add a column:
+alter table table-name add column-name datatype after sid;
+modify the type
+alter table table-name modify column-name datatype
+
+
+
+
+
+
+
+
+
+
+
+
+

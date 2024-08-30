@@ -43,6 +43,17 @@ There are two ways to connect MySQL Server
    -- workbench  -- user interface(GUI) tool to connect or interact with database
    -- command line clent -- CLI(command line interface) to connect or interact with database
 
+Databases : databses stores the data in tables or other other structured format. they are containers to hold multiple data
+to create a database ---> create database database-name
+to drop a database ---> drop database database-name
+to show all databases ---> show databases;
+to use database: use database-name;
+
+
+
+
+
+
 
 
 
