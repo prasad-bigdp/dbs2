@@ -13,10 +13,75 @@ TIME -- it store time with date in
 'DD/MM/YYYY HH:mm:ss' format
 
 create  -- create table table-name(column-name dtataype, column2 datatype);
+
 add a column:
 alter table table-name add column-name datatype after sid;
+if you want to add as first column
+alter table table-name add column-name datatype first;
+By default column is added as last
+
 modify the type
 alter table table-name modify column-name datatype
+
+change the name of column:
+alter table table-name change column-name-old
+ new-column-name datatype;
+
+drop the column:
+alter table table-name drop column column-name; 
+
+Rename the table:
+rename table old_name to new_name;
+
+truncate: it is used to delete the data inside the table
+truncate table table-name;
+
+drop : drop is used to delete the whole completely;
+drop table table-name;
+
+DML(Data Manipulation Language):
+
+insert: insert is used to insert the values into tables
+
+insert into table-name values(val1,val2,val3....);
+
+For multiple rows:
+insert into table-name values
+(val1,val2,val3,...),
+(val11,val12,val13...);
+
+individual columns insert:
+insert into table-name(column-name1,column-name2)
+values(val1,val2),(val11,val12);
+
+when you are creating a table , each column you can give some properties , they are called constraints
+1. not null: ensures that column
+ cannot have a value
+2.unique: ensure that column is unique
+3.primary key: primary is the attribute by which we can identify record uniquely(not null+ unique)
+4. foreign key: esures reference integrity between two tables like a bridge
+5. auto increement: automatically increment the value each time by 1
+6. default: used to give default values for columns
+7.check: ensures that all values follows a specific condition
+8. candidate key: it is eligible to become primary but not opted as primary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
