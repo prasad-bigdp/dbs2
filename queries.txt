@@ -1,0 +1,24 @@
+Clauses:
+we can get the data of any type using certain clauses from tables
+1. select: it is used to specify certain columns which we want
+from a table
+select column-name,column2 or select *(all columns)
+from table-name;
+
+2. where : it is used to retieve data which satisfies certain condition
+select columns
+from table-name
+where condition
+
+3. order by: you can arrange the retrived data in ascending or desceding order
+select columns
+from table-name
+where condition
+order by columnname asc/desc;
+
+4. distinct: distinct identifies unique values of a certain column
+
+select distinct column-name
+from table-name
+
+

@@ -8,9 +8,9 @@ eg: DECIMAL(5,2)---131.2,131.25,135.963
   Both are used to store strings but char contains fixed length and varchar contains variable length with maximum limit
 char(2) -- "DP","PK"
 varchar(20)-- any number of characters upto 20
-DATE -- it returns date in 'DD/mm/YYYY' format
+DATE -- it returns date in 'YYYY-MM-DD' format
 TIME -- it store time with date in
-'DD/MM/YYYY HH:mm:ss' format
+'YYYY-MM-DD HH:mm:ss' format
 
 create  -- create table table-name(column-name dtataype, column2 datatype);
 
@@ -66,6 +66,15 @@ when you are creating a table , each column you can give some properties , they 
 8. candidate key: it is eligible to become primary but not opted as primary
 
 
+
+// update:
+update table-name 
+set column-name=value,column2=value2
+where condition
+
+// delete:
+delete from table-name
+where condition
 
 
 
