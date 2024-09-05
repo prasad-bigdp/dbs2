@@ -1,0 +1,58 @@
+Agreegate functions: agreegate functions are
+ used to perform a calculation/operation on 
+ group of records
+ i. count: count is used to count number of records
+ -- WAQ to retrieve number of people with salary greater than 35000.00
+ select count(*) 
+ from sensai 
+ where salary>35000.00
+
+ 2. sum(): returns the sum of all record values of a numerical column
+ -- WAQ to retrieve the sum of all people salary who are from india
+
+ select sum(salary)
+ from sensai
+ where counry="india"
+
+ 3. avg(): average is used to find average of a numerical column
+
+ 4. max(): used to get maximum value in a numerical column
+
+ 5. min(): used to get minimum value in a numerical column
+
+
+
+ GRoup by :  it is often used to work with aggregate functions to group the result 
+
+-- WAQ to retrieve number of peoples 
+country wise and mention countries alphabetically
+-- WAQ to retrieve
+-- sum and avg and max and min of salaries
+-- country wise alphabetically
+
+
+-- WAQ to retrieve number of people
+based on gender whose salary >35000 
+only if no_of people are more than 10
+select gender count(salary)
+ from sansai where salary>35000;  group by gender having count(salary)>10;
+
+
+-- WAQ to retrieve avg salary country wise
+only if salary is greater than 40k
+select country, avg(salary) as avg_sal
+from sensai
+group by country
+having avg_sal>40000
+
+
+
+
+
+
+
+
+
+
+
+
