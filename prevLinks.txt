@@ -1,6 +1,1 @@
-Database for Full Stack Python @ 2:00 PM (IST) by Mr.Prasad
-Day-1 https://youtu.be/4H9jGS7F9t4
-Day-2 https://youtu.be/Bv95xWqn5nE
-Day-3 https://youtu.be/KyYPEu-1KxA
-Day-4 https://youtu.be/-3uxTUbfNlk
-Day-5 https://youtu.be/BPsKFCYMcRU
+https://youtu.be/4H9jGS7F9t4 Day-2 https://youtu.be/Bv95xWqn5nE Day-3 https://youtu.be/KyYPEu-1KxA Day-4 https://youtu.be/-3uxTUbfNlk Day-5 https://youtu.be/BPsKFCYMcRU Day-6 https://youtu.be/PkejDjpbl8Q 
