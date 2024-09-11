@@ -1,6 +1,23 @@
 JOINS: Joins are used to write queries which involves two or more number of tables
 There are different joins available in MySQL
  -- 1. inner JOIN: inner join is used to retrieve the common data.
+  sno  sname   
+  1     ravi    
+  2     shekhar 
+  3     jaya    
+  4     priya
+
+  -- courses
+  cno cname  sno
+  121  java   1
+  122  python 4
+  123  datascience 4
+  124  c         2
+  125  .net    6
+
+
+
+
 
 
 
