@@ -1,0 +1,191 @@
+INSERT:
+
+In MySQL, the INSERT statement is used to insert new rows into a table. Here are the various possibilities and options you can use with the INSERT statement:
+
+Inserting a Single Row:
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+Inserting Multiple Rows:
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...),
+       (value1, value2, ...),
+       ...;
+
+Inserting Rows from Another Table:
+INSERT INTO table_name (column1, column2, ...)
+SELECT *
+FROM hstaff
+
+
+Inserting Default Values:
+INSERT INTO table_name DEFAULT VALUES;
+
+Inserting with AUTO_INCREMENT Columns:
+If a column is set to AUTO_INCREMENT, you can omit the value for that column in the INSERT statement, and My will automatically generate a unique value for it.
+
+Inserting with Explicit NULL Values:
+You can explicitly insert NULL into a column:
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, NULL, ...);
+
+Inserting with SET Syntax:
+You can use the SET syntax to specify column-value pairs:
+INSERT INTO table_name
+SET column1 = value1, column2 = value2, ...;
+
+Inserting with IGNORE Keyword:
+If you use INSERT IGNORE, My will ignore rows that would cause duplicate-key violations.
+INSERT IGNORE INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+Inserting with ON DUPLICATE KEY UPDATE:
+If you use INSERT ... ON DUPLICATE KEY UPDATE, My will update the existing row if a duplicate-key violation occurs.
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...)
+ON DUPLICATE KEY UPDATE column1 = value1, column2 = value2, ...;
+
+Inserting with SELECT Statement:
+You can insert data into a table from the result of a SELECT statement.
+INSERT INTO table_name (column1, column2, ...)
+SELECT column1, column2, ...
+FROM other_table
+WHERE condition;
+
+ALTER:
+Alter Table:
+
+Add Column:
+ALTER TABLE table_name ADD column_name datatype;
+
+Drop Column:
+ALTER TABLE table_name DROP column_name;
+
+Modify Column:
+ALTER TABLE table_name MODIFY column_name new-col-name new_datatype;
+
+Rename Table:
+ALTER TABLE old_table_name RENAME TO new_table_name;
+
+UPDATE:
+The UPDATE statement in MySQL is used to modify existing records in a table. It allows you to change the values of one or more columns in one or more rows that meet a specified condition. Here's a detailed explanation with examples:
+
+set SQL_SAFE_UPDATES=false;
+
+Basic Syntax:
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+table_name: The name of the table to update.
+column1 = value1, column2 = value2, ...: The columns to be updated along with their new values.
+WHERE condition: Optional. Specifies which rows to update. If omitted, all rows in the table are updated.
+Examples:
+
+Update a Single Column:
+UPDATE users
+SET status = 'active'
+WHERE id = 1;
+This example updates the status column to 'active' for the user with id equal to 1.
+
+Update Multiple Columns:
+UPDATE users
+SET status = 'active', last_login = NOW()
+WHERE id = 1;
+This updates both the status and last_login columns for the user with id equal to 1.
+
+Update All Rows:
+UPDATE users
+SET status = 'inactive';
+This updates the status column to 'inactive' for all rows in the users table
+
+DELETE:
+
+In MySQL, the DELETE statement is used to remove rows from a table based on specified conditions. It allows you to delete one or more rows that match the condition specified in the WHERE clause. Here's a detailed explanation with examples:
+
+Basic Syntax:
+DELETE FROM table_name
+WHERE condition;
+table_name: The name of the table from which to delete rows.
+WHERE condition: Optional. Specifies the condition that must be met for rows to be deleted. If omitted, all rows in the table are deleted.
+Examples:
+
+Delete All Rows from a Table:
+DELETE FROM users;
+This example deletes all rows from the users table.
+
+Delete Specific Rows Based on a Condition:
+DELETE FROM users
+WHERE id = 1;
+This example deletes the row from the users table where the id is equal to 1.
+
+Delete Using Multiple Conditions:
+DELETE FROM users
+WHERE id = 1 AND status = 'inactive';
+This example deletes rows from the users table where the id is equal to 1 and the status is 'inactive'.
+
+SELECT:
+Select All Columns from a Table:
+SELECT *
+FROM users;
+This example selects all columns from the users table.
+
+Select Specific Columns:
+SELECT id, name, email
+FROM users;
+This example selects only the id, name, and email columns from the users table.
+
+Select with Aliases:
+SELECT id, CONCAT(first_name, ' ', last_name) AS full_name
+FROM employees;
+This example selects the id column and concatenates the first_name and last_name columns, aliasing the result as full_name.
+
+Select with WHERE Clause:
+SELECT *
+FROM users
+WHERE status = 'active';
+This example selects all columns from the users table where the status is 'active'.
+
+WHERE:
+To demonstrate the use of various possibilities in the WHERE clause, let's consider a hypothetical employees table with columns id, name, department, salary, and hire_date.
+
+Simple Comparison:
+SELECT *
+FROM employees
+WHERE department = 'Sales';
+This selects all columns from the employees table where the department is 'Sales'.
+
+Using Logical Operators:
+SELECT *
+FROM employees
+WHERE department = 'Sales' AND salary > 50000;
+This selects all columns from the employees table where the department is 'Sales' and the salary is greater than 50000.
+
+Using LIKE Operator for Pattern Matching:
+SELECT *
+FROM employees
+WHERE name LIKE 'J%';
+This selects all columns from the employees table where the name starts with 'J'.
+
+Using IN Operator:
+SELECT *
+FROM employees
+WHERE department IN ('Sales', 'Marketing');
+This selects all columns from the employees table where the department is either 'Sales' or 'Marketing'.
+
+Using BETWEEN Operator:
+SELECT *
+FROM employees
+WHERE salary BETWEEN 50000 AND 100000;
+This selects all columns from the employees table where the salary is between 50000 and 100000.
+
+Using IS NULL/IS NOT NULL:
+SELECT *
+FROM employees
+WHERE hire_date IS NULL;
+This selects all columns from the employees table where the hire_date is NULL.
+
+Combining Conditions:
+SELECT *
+FROM employees
+WHERE department = 'Sales' AND (salary > 50000 OR hire_date > '2023-01-01');
+This selects all columns from the employees table where the department is 'Sales' and the salary is greater than 50000 or the hire_date is after '2023-01-01'.
