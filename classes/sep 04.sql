@@ -3,8 +3,7 @@
 -- create database school;
 -- use school;
 -- create table teachers
--- (tid int primary key auto_increment,
--- tname varchar(30) not null,
+-- (tid int primary key auto_increment,tname varchar(30) not null,
 -- gender char(1), 
 -- salary decimal(10,2) check (salary>10000.00),
 -- dob date,sub varchar(20),
@@ -58,14 +57,9 @@
  -- from sensai;
  -- order by
  -- retrive the peoples list alphabetically
- -- select * 
- -- from sensai
- -- order by tcname asc;
- 
- 
- 
- 
- 
+ select * 
+ from sensai
+ order by tcname asc;
  
  
  
