@@ -1,0 +1,44 @@
+MongoDB:
+what is MongoDB?
+MongoDB is a NOSQL, schema-less document based database which stores data in BSON(binary JSON format)
+---> collections are like tables
+---> documents are like rows/records
+---> fields are like columns
+---> by default have field '_id':ObjectId
+rdbms uses vertical data, mongodb uses horizontal data
+Goto monodb website 
+download and install
+'mongodb server',mongodb compass',mogodb shell-mongosh'
+after installing go to cdrive--> program files--->mongodb-->server/compass/mongosh-->bin
+copy path and paste it in environment variables
+
+create a collection:
+use databasename; --> it will create data base and use it
+db.createCollection("collection-name")--> it will create a collection
+show dbs; ---> show all the databases
+show collections; ---> it will show all collections;
+
+Insert:
+---------
+db.collection-name.insertOne({key1:value1,key2:value2....})
+db.collection-name.insertMany([{key1:value1,key2:value2....},
+{key1:value1,key2:value2....},
+{key1:value1,key2:value2....}])
+
+update:
+----------
+db.collection-name.updateOne({condition(key:value)},{$set:{key:value}});
+db.collection-name.updateMany({condition(key:value)},{$set:{key:value}})
+
+delete:
+------------
+db.collection-name.deleteOne({condition(key:value)})
+db.collection-name.deleteMany({condition(key:value)})
+
+read:
+----------
+db.collection-name.find() --> display all documents in that collection
+
+drop Database----> db.dropDatabase()
+drop collection -----> db.collection-name.drop()
+
